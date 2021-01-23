@@ -24,6 +24,7 @@ class TableViewController: UITableViewController {
         cityArray()
     }
     
+    // Получение списка городов из citys.json
     private func cityArray() {
         guard let jsonURL = Bundle.main.path(forResource: "citys", ofType: "json") else {return}
         guard let jsonString = try? String(contentsOf: URL(fileURLWithPath: jsonURL), encoding: String.Encoding.utf8) else {return}

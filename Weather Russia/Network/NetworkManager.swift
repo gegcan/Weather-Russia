@@ -9,7 +9,7 @@ import Foundation
 
 struct NetworkManager {
     
-    private let key = "8f525b6eba3f4b535bd8808e42291e1a"
+    private let key = "8f52..."
     
     func weatherUrl(city: String, completionHandler: @escaping(ModelWeather) -> Void) {
         let stringUrl = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(key)&units=metric"
